@@ -1,10 +1,10 @@
 package functions;
 
 import mainFunction.UtilPage;
-import xPath.PracticePage;
+import xPath.PracticePageXPath;
 
 public class PracticePageFunction extends UtilPage {
-	PracticePage pp = new PracticePage();
+	PracticePageXPath pp = new PracticePageXPath();
 	
 	public void clickBmwRadioButton() {
 				
@@ -49,5 +49,16 @@ public class PracticePageFunction extends UtilPage {
 		
 	}
 	
+	public void clickDropDownButton() {
+		
+		
+	}
 	
+	public void clickNewWindow() {
+		
+		clickElement(pp.openWindow);
+		
+		
+	}
+
 }

@@ -1,12 +1,12 @@
 package functions;
 
 import mainFunction.UtilPage;
-import testNGTest.HomePage;
-import xPath.PracticePage;
+import xPath.HomePageXPath;
+import xPath.PracticePageXPath;
 
 public class HomePageFunction extends UtilPage{
 	
-	HomePage hp = new HomePage();	
+	HomePageXPath hp = new HomePageXPath();	
 	
 	public void clickPracticeButton() {
 		

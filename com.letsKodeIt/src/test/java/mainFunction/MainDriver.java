@@ -10,7 +10,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class MainDriver {
 
-	public static WebDriver driver;
+	public  static WebDriver driver;
 	
 	
 //	public MainDriver(WebDriver driver) {

@@ -1,6 +1,6 @@
 package xPath;
 
-public class PracticePage {
+public class PracticePageXPath {
 	
 public	String bmwRadioButton = "//input[@id='bmwradio']";
 public  String bmwRadioText = "//div[@id='radio-btn-example']//label[1]";
@@ -22,4 +22,29 @@ public	String checkBmw = "//div[@id='checkbox-example']//label[1]";
 public	String checkBenz = "//div[@id='checkbox-example']//label[2]";
 public	String checkHonda = "//input[@id='hondacheck']";
 	
+public String allRadioButtons = "//input[@type='radio' and @name='cars']";
+
+public String radioAndCheckBoxButton = "//input[@name='cars']";
+
+public String carSelectButton = "//select[@id='carselect']";
+public String carSelectBmw = "//option[contains(text(),'BMW')]";
+public String carSelectBenz = "//option[contains(text(),'Benz')]";
+public String carSelectHonda = "//option[contains(text(),'Honda')]";
+
+public String openWindow = "//button[@id='openwindow']";
+
+public String alertText = "//input[@class = 'inputs']";
+public String alertButton = "//input[@id= 'alertbtn']";
+public String alertConfirmButton = "//input[@id= 'confirmbtn']";
+
+public String iFrame = "//iframe[@id = 'courses-iframe']";
+
+public String mouseHoverButton = "//button[@id = 'mousehover']";
+public String mouseHoverTopButton = "//a[text()= 'Top']";
+public String mouseHoverReloadButton = "//a[text()= 'Reload']";
+
+
+
+
+
 }

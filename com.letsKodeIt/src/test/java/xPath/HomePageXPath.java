@@ -1,6 +1,6 @@
-package testNGTest;
+package xPath;
 
-public class HomePage {
+public class HomePageXPath {
 	
 	public String practiceButton = "//a[@class='fedora-navbar-link navbar-link']";
 	
