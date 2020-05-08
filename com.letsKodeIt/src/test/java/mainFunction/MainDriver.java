@@ -26,8 +26,8 @@ public class MainDriver {
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS); // to do with loading time for browsers
-			driver.get("https:\\www.google.com");
 			driver.get("https://learn.letskodeit.com/");
+			//driver.get("https://www.amazon.com/");
 			
 			
 			
@@ -61,7 +61,48 @@ public class MainDriver {
 		
 	}
 	
-
+public void openBrowser2(String browser) {
+		
+		if (browser.equalsIgnoreCase("Chrome")) {
+			
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\myran\\Documents\\WebDrivers\\chromedriver.exe");
+			driver = new ChromeDriver();
+			driver.manage().window().maximize();
+			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS); // to do with loading time for browsers
+			driver.get("https://www.goibibo.com/");
+			
+			
+			
+			
+		}
+		
+		else if (browser.equalsIgnoreCase("edge")) {
+			
+			System.setProperty("webdriver.edge.driver", "C:\\Users\\myran\\Documents\\WebDrivers\\msedgedriver.exe");
+			driver = new EdgeDriver();
+			driver.manage().window().maximize();
+			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+			driver.get("https:\\www.google.com");
+			driver.get("https://www.goibibo.com/");
+		}
+		
+		else if (browser.equalsIgnoreCase("firefox")) {
+			
+			System.setProperty("webdriver.firefox.driver", "C:\\Users\\myran\\Documents\\WebDrivers\\geckodriver.exe");
+			driver = new FirefoxDriver();
+			driver.manage().window().maximize();
+			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+			driver.get("http:\\www.google.com");
+			driver.get("https://www.goibibo.com/");
+		}
+		
+		else {
+			
+			System.out.println("Incorrect browser");
+			
+		}
+		
+	}
 	
 	
 	

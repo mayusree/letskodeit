@@ -1,5 +1,7 @@
 package testNGTest;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
@@ -16,15 +18,17 @@ public class MouseHoverTest extends UtilPage {
 	public void testMouseHover() {
 		
 		openBrowser("chrome");
-		hpf.clickPracticeButton();
+		//hpf.clickPracticeButton();
 		sleep(2000);
 
 		Actions ac = new Actions(driver);
+	
 		
-		ac.moveToElement(getWebElement(ppx.mouseHoverButton)).perform();
+		
+		
+		ac.moveToElement(getWebElement(ppx.mouseHoverButton)).build().perform();
 		sleep(2000);
-		//clickElement(ppx.mouseHoverTopButton);
-		clickElement(ppx.mouseHoverReloadButton);
+		clickElement(ppx.mouseHoverTopButton);clickElement(ppx.mouseHoverReloadButton);
 		
 		
 	}
